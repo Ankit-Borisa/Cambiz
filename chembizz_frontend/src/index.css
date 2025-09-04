@@ -1,0 +1,312 @@
+@tailwind base;
+@layer base {
+  img {
+    @apply inline-block;
+  }
+}
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.my-container {
+  max-width: 1499px;
+  margin: auto;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar-container {
+  max-width: 1350px;
+  margin: auto;
+}
+
+.profile-container {
+  max-width: 1350px;
+  margin: auto;
+}
+
+.component {
+  background: linear-gradient(#9192ff, #80dcff);
+}
+
+.login-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("./images/loginbanner1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.registration-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("https://chembizzstorage.blob.core.windows.net/chembizz-files/signup_image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.otpInput {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  text-align: center;
+  font-size: 1.2em;
+  border: 1px solid rgb(189, 177, 177);
+}
+
+.footer {
+  background: linear-gradient(180deg, #202856 0%, #03131e 98%);
+}
+
+.customer-stories {
+  background: linear-gradient(180deg, #202856 0%, #03131e 100%);
+}
+
+.background-search {
+  background-image: url("./images/search-bg.jpg");
+  height: 130px;
+  border-radius: 15px;
+  background-size: cover;
+}
+
+.started-background {
+  background-image: url("./images/Banner.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+.form-container {
+  max-width: 72%;
+  margin: auto;
+}
+
+.pricing-container {
+  max-width: 1350px;
+  margin: auto;
+}
+
+.swiper-button-prev {
+  left: -10px;
+  z-index: 1000;
+}
+
+/* Example CSS for styling navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: none; /* Change background color */
+  color: #fff; /* Change text color */
+  border-radius: 50%; /* Make the buttons round */
+  width: 40px; /* Set width */
+  height: 40px; /* Set height */
+  font-size: 20px; /* Change font size */
+  line-height: 40px; /* Center text vertically */
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: none; /* Change background color on hover */
+}
+
+/* Example CSS for styling pagination bullets */
+.swiper-pagination-bullet {
+  display: none;
+  background-color: none; /* Change bullet color */
+  width: 10px; /* Set width */
+  height: 10px; /* Set height */
+  margin: 0 5px; /* Add margin between bullets */
+  border-radius: 50%; /* Make bullets round */
+}
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.custom-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.custom-bullet-active {
+  background-color: #007bff;
+}
+
+.custom-bullet:hover {
+  background-color: #555;
+}
+
+
+@media (max-width: 1024px) {
+  .form-container {
+    max-width: 82%;
+    margin: auto;
+  }
+
+  .started-background {
+    height: 295px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    max-width: 100%;
+    margin: auto;
+  }
+  .background-search {
+    height: 130px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .background-search {
+    height: 80px;
+    width: 100%;
+  }
+
+  .background-search input::placeholder {
+    font-size: 12px;
+  }
+
+  .background-search p {
+    font-size: 10px;
+  }
+
+  .started-background {
+    height: 200px;
+  }
+}
+
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.carousel-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.carousel-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.inquiry-button {
+  background-color: #0044cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* ///////// hide side scrollbar from sidebar/////////// */
+
+.scrollbar-container {
+  overflow-y: auto; /* Allow scrolling */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+.scrollbar-container::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes noticeFadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-noticeFadeSlide {
+  animation: noticeFadeSlide 0.5s ease-out;
+}
+

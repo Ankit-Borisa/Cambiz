@@ -1,0 +1,19 @@
+.box-shadow:hover {
+  box-shadow: 0 20px 30px rgb(0 0 0 / 21%);
+  transform: scale(1.1);
+}
+
+.box-shadow {
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .box-shadow:hover {
+    box-shadow: none;
+    transform: scale(1);
+  }
+
+  .box-shadow {
+    transition: transform 0.3s ease-in-out;
+  }
+}

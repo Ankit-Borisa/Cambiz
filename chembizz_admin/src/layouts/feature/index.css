@@ -1,0 +1,15 @@
+          .demo {
+              height: 130%;
+              width: 40%;
+              margin: auto;
+              padding: 2rem;
+              border-radius: 5%;
+              background-color: #FFFFFF;
+              /* background-color: darkMode ? "rgb(26 46 79)" : "#FFFFFF", */
+          }
+          
+          @media (max-width:700px) {
+              .demo {
+                  width: 100%;
+              }
+          }
